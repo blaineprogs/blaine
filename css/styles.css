@@ -18,6 +18,8 @@ body {
 	margin: 0 auto;
 }
 
+
+
 /* || Card Styling */
 
 .card {
@@ -27,6 +29,22 @@ body {
 	border-radius: 8px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	border: 2px solid #000000;
+}
+
+.dark-mode {
+	background-color: #505050;
+	color:white;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: white;
+}
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #444;
+    color: white;
+    border-color: #666;
 }
 
 /* || Typography */
@@ -97,8 +115,9 @@ button:hover {
 }
 
 
-
-
+.hidden {
+	display:none;
+}
 
 
 
