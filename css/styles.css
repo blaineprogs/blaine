@@ -37,14 +37,15 @@ body {
 }
 
 .dark-mode .card {
-    background-color: #333;
-    color: white;
+	background-color: #333;
+	color: white;
 }
+
 .dark-mode input,
 .dark-mode textarea {
-    background-color: #444;
-    color: white;
-    border-color: #666;
+	background-color: #444;
+	color: white;
+	border-color: #666;
 }
 
 /* || Typography */
@@ -72,7 +73,8 @@ a {
 	text-decoration: none;
 	color: #FF46A2;
 }
-a: hover {
+
+a:hover {
 	color: #005fa3
 }
 
@@ -120,8 +122,10 @@ button:hover {
 }
 
 
-
-
+.center-btn {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 
 
