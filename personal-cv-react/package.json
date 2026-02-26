@@ -2,6 +2,7 @@
   "name": "personal-cv-react",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://blaineprogs.github.io/blaine/personal-cv-react/",
   "type": "module",
   "scripts": {
     "dev": "vite",
