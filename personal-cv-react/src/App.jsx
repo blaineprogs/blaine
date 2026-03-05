@@ -7,6 +7,46 @@ import Contact from "./components/Contact";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const skills = [
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"React"
+  ];
+
+  const education = [
+	{
+	  year: "2024-2028",
+	  program: "Bachelor of Science Information Technology",
+	  school: "University of Science and Technology of Southern Philippines (CDO)"
+	},
+	{
+	  year: "2022-2024",
+	  program: "Humanities and Social Sciences",
+	  school: "Liceo de Cagayan University"
+	},	
+	{
+	  year: "2020-2022",
+	  program: "Junior High School (Grade 9-10)",
+	  school: "Misamis Oriental General Comprehensive High School"
+	},	
+	{
+	  year: "2018-2020",
+	  program: "Junior High School (Grade 7-8)",
+	  school: "Pilgrim Christian College"
+	},	
+	{
+	  year: "2012-2018",
+	  program: "Elementary School (Grade 1-6)",
+	  school: "City Central School"
+	},
+	{
+	  year: "2010-2012",
+	  program: "Kindergarten",
+	  school: "Mount Olive Christian School"
+	},
+  ];
+
 
   return (
   <div className={darkMode ? "dark-mode" : ""}>
@@ -17,8 +57,8 @@ function App() {
         <div className="container">
 	  <Header />
           <About />
-          <Skills />
-          <Education />
+          <Skills skills={skills} />
+          <Education education={education} />
           <Contact />
         </div>
       </main>
