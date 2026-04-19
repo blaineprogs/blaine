@@ -12,8 +12,26 @@ function handleSubmit(e) {
     alert("Please fill in all fields.");
     return;
   }
-
-  alert(`Thank you ${name}!`);
+  
+  fetch("http://localhost/cv-api/process.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: name,
+      email: email,
+      message: message
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.message) {
+      alert(data.message);
+    } else {
+      alert("Unexpected error occurred.");
+    }
+  });
 }
 
   return (
